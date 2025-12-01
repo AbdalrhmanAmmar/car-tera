@@ -1,70 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- الصفحة الرئيسية (تشمل جميع الأقسام: من نحن، الخدمات، اتصل بنا) -->
     <url>
-        <loc>https://www.yourwebsite.com/</loc>
-        <lastmod>2024-05-20</lastmod>
+        <loc>https://car-tera.com/</loc>
+        <lastmod>2024-12-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://www.yourwebsite.com/services/engine-check</loc>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/services/chassis-vin-check</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/toyota</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/hyundai</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/kia</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/mercedes</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/bmw</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/egypt</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/saudi-arabia</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/uae</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/kuwait</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/vin-check/jordan</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-
-    <url>
-        <loc>https://www.yourwebsite.com/blog/how-to-read-engine-serial-number</loc>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/blog/vin-decoder-guide-arabic</loc>
-    </url>
-    <url>
-        <loc>https://www.yourwebsite.com/parts/find-spare-parts-by-vin</loc>
     </url>
 </urlset>
