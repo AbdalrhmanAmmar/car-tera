@@ -1,0 +1,229 @@
+---
+// تعريف البيانات هنا ليسهل تعديلها لاحقاً
+const siteConfig = {
+  phoneNumber: "01022316265",
+  facebookLink: "https://www.facebook.com",
+  // يمكنك إضافة كود الدولة هنا
+  whatsappLink: "https://wa.me/2001022316265" 
+};
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer id="contact" class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- القسم الأيمن: الدعوة لاتخاذ إجراء -->
+      <div class="footer-cta">
+        <h2>هل تواجه مشكلة في سيارتك؟</h2>
+        <p>
+          لا تتردد في التواصل معنا. فريقنا جاهز للرد على استفساراتك وتقديم المساعدة الفورية. 
+          يمكنك التواصل معنا عبر الواتساب أو الهاتف مباشرة.
+        </p>
+        
+        <div class="buttons-wrapper">
+          <a href={siteConfig.whatsappLink} target="_blank" class="btn-contact btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="btn-text">
+              <span class="small-text">تواصل عبر واتساب</span>
+              <span class="large-text" dir="ltr">{siteConfig.phoneNumber}</span>
+            </div>
+          </a>
+
+          <a href={siteConfig.facebookLink} target="_blank" class="btn-contact btn-facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <span>صفحتنا على فيسبوك</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- القسم الأيسر: بطاقة خدمة العملاء -->
+      <div class="support-card">
+        <div class="icon-circle">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <h3>خدمة العملاء</h3>
+        <p>متاحون للرد على استفساراتكم</p>
+        <div class="phone-number" dir="ltr">{siteConfig.phoneNumber}</div>
+      </div>
+
+    </div>
+
+    <!-- حقوق الملكية -->
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} جميع الحقوق محفوظة لمركز خدمات السيارات.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background-color: #000;
+    border-top: 1px solid var(--border-light);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-top: auto; /* يضمن بقاء الفوتر في الأسفل */
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  /* تنسيقات النصوص */
+  .footer-cta h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-cta p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+  /* أزرار التواصل */
+  .buttons-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s, filter 0.2s;
+    text-decoration: none;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .btn-contact:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+  }
+
+  .btn-whatsapp {
+    background-color: #16a34a; /* Green-600 */
+  }
+
+  .btn-facebook {
+    background-color: #2563eb; /* Blue-600 */
+  }
+
+  .btn-contact i {
+    font-size: 1.5rem;
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+  }
+
+  .small-text {
+    font-size: 0.75rem;
+    font-weight: normal;
+    opacity: 0.9;
+  }
+
+  .large-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  /* بطاقة الدعم الفني */
+  .support-card {
+    background-color: #111827; /* Gray-900 */
+    border: 1px solid var(--border-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-circle i {
+    font-size: 2.25rem;
+    color: var(--primary-color);
+  }
+
+  .support-card h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .support-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .phone-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: monospace;
+  }
+
+  /* أسفل الفوتر */
+  .footer-bottom {
+    border-top: 1px solid #1f2937;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    color: #4b5563; /* Gray-600 */
+    font-size: 0.875rem;
+  }
+
+  /* التجاوب مع الجوال */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .footer-cta p {
+      margin: 0 auto 2rem auto;
+    }
+
+    .buttons-wrapper {
+      flex-direction: column;
+    }
+
+    .btn-text {
+      align-items: center; /* توسيط النص داخل الزر في الموبايل */
+    }
+  }
+</style>

@@ -1,0 +1,270 @@
+---
+---
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      
+      <!-- الجانب الصوري -->
+      <div class="image-wrapper">
+        <div class="glow-effect"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1487754180477-01b379f7000d?q=80&w=2070&auto=format&fit=crop" 
+          alt="فني صيانة سيارات" 
+          class="about-img"
+        />
+        <!-- شارة الخبرة العائمة -->
+        <div class="experience-badge">
+          <span class="years">10+</span>
+          <span>سنوات خبرة</span>
+        </div>
+      </div>
+
+      <!-- جانب النص -->
+      <div class="content-wrapper">
+        <h2 class="section-title">
+          <span class="text-brand">من</span> نحن
+        </h2>
+        
+        <p class="main-description">
+          نحن فريق متخصص في تقديم خدمات السيارات باحترافية عالية، حيث نعمل على توفير أفضل أداء وأعلى مستوى من الأمان لعملائنا. نمتلك الخبرة والأدوات الحديثة التي تؤهلنا للتعامل مع كافة أنواع السيارات الحديثة والكلاسيكية بدقة متناهية.
+        </p>
+
+        <div class="vision-box">
+          <h3>رؤيتنا</h3>
+          <p>
+            أن نكون الوجهة الأولى لخدمات السيارات في المنطقة، من خلال تقديم جودة لا تضاهى، واهتمام بأدق التفاصيل، وتجربة خدمة مريحة وسهلة لكل عميل يثق بنا.
+          </p>
+        </div>
+
+        <ul class="features-list">
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span>فريق فني معتمد</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span>أجهزة فحص متطورة</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span>قطع غيار أصلية</span>
+          </li>
+        </ul>
+        
+        <div class="cta-wrapper">
+          <a href="#contact" class="btn-more">تواصل معنا الآن</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 8rem 0;
+    background-color: #030712; /* خلفية داكنة جداً */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  /* === تنسيق الصور والجانب البصري === */
+  .image-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem; /* مساحة للإطار */
+  }
+
+  /* تأثير الخلفية المتوهجة */
+  .glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: var(--primary-color);
+    opacity: 0.15;
+    filter: blur(60px);
+    z-index: 0;
+    border-radius: 50%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    filter: grayscale(100%) contrast(1.1);
+    transition: all 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  }
+
+  .image-wrapper:hover .about-img {
+    filter: grayscale(0%) contrast(1);
+    transform: scale(1.02);
+    border-color: var(--primary-color);
+  }
+
+  /* شارة الخبرة */
+  .experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px; /* تم التعديل لليسار في التجاوب */
+    background-color: var(--primary-color);
+    color: #000;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255,255,255,0.1);
+  }
+
+  .experience-badge .years {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  /* === تنسيق النصوص والمحتوى === */
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .main-description {
+    color: var(--text-muted); /* رمادي فاتح */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    text-align: justify;
+    padding-left: 1rem;
+  }
+
+  /* صندوق الرؤية */
+  .vision-box {
+    background: linear-gradient(90deg, rgba(31, 41, 55, 0.6) 0%, rgba(31, 41, 55, 0) 100%);
+    border-right: 4px solid var(--primary-color);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vision-box h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .vision-box p {
+    color: #d1d5db;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* قائمة المميزات */
+  .features-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+
+  .features-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #e5e7eb;
+    font-weight: 500;
+  }
+
+  .features-list i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+  }
+
+  /* زر المزيد */
+  .btn-more {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .btn-more:hover {
+    background-color: var(--primary-color);
+    color: #000;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+  }
+
+  /* === التجاوب (Responsive) === */
+  @media (max-width: 900px) {
+    .about-section {
+      padding: 4rem 0;
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .vision-box {
+      text-align: right;
+      border-right: 4px solid var(--primary-color);
+      /* لضمان بقاء الخط يمين النص حتى في الموبايل */
+    }
+
+    .main-description {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .features-list {
+      justify-content: center;
+    }
+
+    .experience-badge {
+      right: auto;
+      left: 20px; /* تغيير مكان الشارة في الموبايل */
+      bottom: -15px;
+      padding: 1rem 1.5rem;
+    }
+    
+    .experience-badge .years {
+      font-size: 2rem;
+    }
+  }
+</style>

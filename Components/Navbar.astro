@@ -1,0 +1,53 @@
+---
+---
+<nav class="navbar">
+  <div class="container nav-content">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-car-burst"></i>
+      <span>tera</span>car
+    </a>
+    
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+
+    <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(17, 24, 39, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-light);
+    padding: 1rem 0;
+  }
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logo span { color: #fff; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a:hover { color: var(--primary-color); }
+  .mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; } /* يمكن إضافة جافاسكريبت للقائمة الجانبية لاحقاً */
+    .mobile-menu-btn { display: block; }
+  }
+</style>

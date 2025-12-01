@@ -1,0 +1,93 @@
+/* src/styles/global.css */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap");
+
+:root {
+  --primary-color: #f59e0b; /* اللون الذهبي */
+  --primary-hover: #d97706;
+  --bg-dark: #030712; /* الخلفية الداكنة */
+  --bg-card: rgba(31, 41, 55, 0.7);
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-light: rgba(255, 255, 255, 0.1);
+  --font-main: "Tajawal", sans-serif;
+  --container-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+ul {
+  list-style: none;
+}
+
+/* Utility Classes بديلة لـ Tailwind */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline {
+  border: 2px solid #6b7280;
+  color: #e5e7eb;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.text-brand {
+  color: var(--primary-color);
+}

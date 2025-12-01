@@ -1,0 +1,44 @@
+---
+const services = [
+  { icon: "fa-key", title: "نسخ المفاتيح", desc: "نسخ وبرمجة جميع أنواع مفاتيح السيارات المشفرة." },
+  { icon: "fa-laptop-medical", title: "فحص كمبيوتر", desc: "تشخيص دقيق للأعطال وإطفاء لمبات التحذير." },
+  { icon: "fa-oil-can", title: "تغيير زيوت", desc: "استخدام أفضل أنواع الزيوت الأصلية للمحرك وناقل الحركة." },
+  { icon: "fa-gears", title: "ميكانيكا عامة", desc: "صيانة العفشة، الفرامل، والمحرك بكفاءة عالية." },
+];
+---
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">خدماتنا <span class="text-brand">الشاملة</span></h2>
+    <div class="grid">
+      {services.map(service => (
+        <div class="card">
+          <i class={`fa-solid ${service.icon} icon`}></i>
+          <h3>{service.title}</h3>
+          <p>{service.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section { padding: 5rem 0; background-color: #111827; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .card {
+    background: #1f2937;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
+  .icon { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem; display: block; }
+  h3 { margin-bottom: 0.5rem; font-size: 1.25rem; }
+  p { color: var(--text-muted); font-size: 0.9rem; }
+</style>
